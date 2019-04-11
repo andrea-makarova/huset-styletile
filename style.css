@@ -382,6 +382,8 @@ footer a {
 .logos {
     background-color: rgba(255, 255, 255, 0.3);
     padding-left: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .contact {
@@ -430,7 +432,6 @@ footer h5 {
     position: absolute;
     top: 160px;
     background-color: white;
-    width: ;
     height: 40px;
     padding: 30px;
     padding-bottom: 12px;
@@ -578,10 +579,8 @@ footer h5 {
     }
 
     .secondRow {
-        transform: translateY(-360px);
+        display: none;
     }
-
-
 
     .desktop {
         display: none;
@@ -593,17 +592,91 @@ footer h5 {
         position: relative;
         bottom: 0;
         margin-top: 1000px;
-        height: 573px;
-    }
-
-    .logos {display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-        margin: 0px;
-        margin-top: 20px;
-    }
-
-    .contact, .about, .offer, .follow {
+        height: 500px;
+        margin-bottom: 0;
         text-align: center;
-width: 100%;
     }
+
+    .logos {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0;
+        margin-top: 30px;
+        width: 100vw;
+    }
+
+    .contact {
+        transform: translateX(0);
+    }
+
+    .contact,
+    .about,
+    .offer,
+    .follow {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #location-menu {
+    position: absolute;
+    top: 160px;
+
+    background-color: white;
+    height: 290px;
+        width: 70px;
+    padding: 30px;
+    padding-bottom: 12px;
+    padding-top: 5px;
+    z-index: 1;
+    transform: translateX(0px);
+}
+
+#genre-menu {
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    width: 70px;
+    height: 100px;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    z-index: 1;
+    transform: translateX(0px);
+}
+
+#genre-menu p {
+    cursor: pointer;
+    display: inline;
+    padding: 30px;
+}
+
+#genre-menu p:hover {
+    text-decoration: underline;
+}
+
+
+#date-menu {
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    z-index: 1;
+    transform: translateX(-50px);
+}
+
+#date-menu img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
