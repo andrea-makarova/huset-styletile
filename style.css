@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #DCF1EC
+    background-color: #DCF1EC;
+    margin: 0px;
 }
 
 /* header */
@@ -44,6 +45,7 @@ a.languages {
 a.selected {
     text-decoration: underline;
 }
+
 .searchIcon {
     max-width: 12px;
     padding-top: 2px;
@@ -62,9 +64,10 @@ input {
 /*main*/
 
 img.logo {
-    width: 180px;
+    width: 160px;
     position: fixed;
-    top: 100px;
+    top: 80px;
+    z-index: -1;
 }
 
 div.icons {
@@ -92,6 +95,8 @@ div.icons {
     padding-left: 220px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 1000px;
+    padding-top: 30px;
 
 }
 
@@ -104,7 +109,11 @@ button {
     cursor: pointer;
 }
 
-button:hover {opacity: 0.5;}
+button:hover {
+    opacity: 0.5;
+}
+
+
 /*purple*/
 .purple {
     width: 300px;
@@ -227,7 +236,7 @@ button:hover {opacity: 0.5;}
 .game h4 {
     margin-bottom: 0px;
     padding: 6px;
-     padding-top: 14.5px;
+    padding-top: 14.5px;
     padding-bottom: 14.5px;
     font-size: 70%;
     width: 288px;
@@ -271,11 +280,173 @@ button:hover {opacity: 0.5;}
     transform: translateY(-300px);
 }
 
-.purple:hover, .blue:hover, .yellow:hover {
+.purple:hover,
+.blue:hover,
+.yellow:hover {
     opacity: 0;
-    transition:  1s;
+    transition: 1s;
 }
 
-.purple, .blue, .yellow {
+.purple,
+.blue,
+.yellow {
     cursor: pointer;
+}
+
+footer {
+    background-color: #3F8776;
+    height: 162px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 50%;
+    padding-left: 10px;
+
+
+}
+
+.offer {
+    padding-left: 20px;
+
+    line-height: 80%;
+}
+
+.about {
+    padding-left: 30px;
+    line-height: 80%;
+    width: 200px;
+}
+
+.logos {
+    background-color: rgba(255,255,255, 0.3);
+    padding-left: 5px;
+}
+
+.contact {
+    padding-left: 0px;
+    line-height: 80%;
+    transform: translateX(-30px);
+}
+
+.follow {
+    padding-left: 100px;
+    width: 200px;
+
+}
+
+footer h5 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+    padding-left: 10px;
+    font-size: 65%;
+    margin-bottom: 10px;
+    padding-top: 20px;
+
+}
+
+.follow img {
+    height: 25px;
+    padding: 10px;
+}
+
+.logos img{
+    width: 55px;
+    padding: 5px;
+    padding-top: 7px;
+}
+
+
+
+/* filtering*/
+
+.hide {
+    display: none;
+}
+
+#location-menu {
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    width: ;
+    height: 40px;
+    padding: 30px;
+    padding-bottom: 12px;
+    padding-top: 5px;
+    z-index: 1;
+    transform: translateX(-50px);
+}
+
+#location-menu p {
+    cursor: pointer;
+    display: inline;
+    padding-right: 30px;
+}
+
+#location-menu p:hover {
+    text-decoration: underline;
+}
+
+#genre-menu {
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    width: 60%;
+    height: 40px;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    z-index: 1;
+        transform: translateX(-50px);
+}
+
+#genre-menu p {
+    cursor: pointer;
+    display: inline;
+    padding: 30px;
+}
+
+#genre-menu p:hover {
+    text-decoration: underline;
+}
+
+
+#date-menu {
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    z-index: 1;
+    transform: translateX(-50px);
+}
+
+#date-menu img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.findEvents {
+    margin-left: 48%;
+    margin-right: 42%;
+    ;
+    margin-top: 80px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: #303030;
+    color: white;
+    border: none;
+
 }
