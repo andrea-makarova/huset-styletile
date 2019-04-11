@@ -61,6 +61,61 @@ input {
 
 }
 
+/* OVERLAY MENU and BURGER MENU */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0%;
+    background-color: #DCF1EC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+#color {
+    color: black;
+}
+
+.overlay a {
+    padding: 9px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay #color:hover,
+.overlay #color:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 35px;
+    font-style: normal;
+    width: 2%;
+}
+
+.burgermenu {
+    width: 27px;
+    float: right;
+    padding-right: 25px;
+    display: none;
+}
+
+
+
 /*main*/
 
 img.logo {
@@ -449,4 +504,28 @@ footer h5 {
     color: white;
     border: none;
 
+}
+
+/* Media query for mobile version */
+@media (min-width: 400px) {
+
+.burgermenu {
+        display: block;
+    }
+
+.main-nav {
+        display: none;
+}
+}
+
+/* Media query for desktop version */
+@media (min-width: 850px) {
+
+.burgermenu {
+        display: none;
+    }
+
+.main-nav {
+        display: block;
+}
 }
