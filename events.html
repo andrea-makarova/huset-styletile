@@ -14,13 +14,32 @@
     <header>
 
         <nav>
-            <a class="selected" href="">events</a>
-            <a href="">make events</a>
-            <a href="">volunteering</a>
-            <a href="">about us</a>
-            <a href="">contact us</a>
-            <img class="searchIcon" src="images/search.png" alt="search icon"><input type="text" placeholder="Search..">
-            <a href="" class="languages">DA</a> / <a href="" class="languages">EN</a>
+            <!-- Main Navigation -->
+            <div class="main-nav">
+                <a class="selected" href="">events</a>
+                <a href="">make events</a>
+                <a href="">volunteering</a>
+                <a href="">about us</a>
+                <a href="">contact us</a>
+                <img class="searchIcon" src="images/search.png" alt="search icon"><input type="text" placeholder="Search..">
+                <a href="" class="languages">DA</a> / <a href="" class="languages">EN</a>
+            </div>
+
+            <!-- Burger Menu -->
+            <img src="images/burger-menu-black.png" class="burgermenu" onclick="openNav()">
+
+            <!-- Overlay -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                 <div class="overlay-content">
+                    <a href="" id="color">EVENTS</a>
+                    <a href="" id="color">MAKE EVENTS</a>
+                    <a href="" id="color">VOLUNTEERING</a>
+                    <a href="" id="color">ABOUT US</a>
+                    <a href="" id="color">CONTACT US</a>
+                 </div>
+            </div>
         </nav>
     </header>
 
