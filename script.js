@@ -6,6 +6,7 @@ const genreMenu = document.querySelector("#genre-menu");
 const dateMenu = document.querySelector("#date-menu");
 const searchButton = document.querySelector(".findEvents");
 
+
 locations.addEventListener("click", () => {
 
     locationMenu.classList.toggle("hide");
@@ -46,13 +47,12 @@ date.addEventListener("click", () => {
 // Open and Close Burger menu //
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    filterButton.style.zIndex=0
+    filterButton.style.zIndex=0;
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     setTimeout(()=>{
         filterButton.style.zIndex=1
-    }, 500)
-
+    }, 500);
 }
