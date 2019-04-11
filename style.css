@@ -379,7 +379,7 @@ footer a {
 }
 
 .logos {
-    background-color: rgba(255,255,255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     padding-left: 5px;
 }
 
@@ -411,7 +411,7 @@ footer h5 {
     padding: 10px;
 }
 
-.logos img{
+.logos img {
     width: 55px;
     padding: 5px;
     padding-top: 7px;
@@ -458,7 +458,7 @@ footer h5 {
     padding-bottom: 0px;
     padding-top: 5px;
     z-index: 1;
-        transform: translateX(-50px);
+    transform: translateX(-50px);
 }
 
 #genre-menu p {
@@ -496,8 +496,9 @@ footer h5 {
 .findEvents {
     margin-left: 48%;
     margin-right: 42%;
-    ;
+    cursor: pointer;
     margin-top: 80px;
+    display: none;
     width: 100px;
     text-transform: uppercase;
     background-color: #303030;
@@ -506,26 +507,99 @@ footer h5 {
 
 }
 
-/* Media query for mobile version */
-@media (min-width: 400px) {
+.overlay-content img {
+    position: fixed;
+    top: 5px;
+    width: 40px;
+    left: 20px;
+}
 
-.burgermenu {
+/* Media query for mobile version */
+@media (min-width: 0px) {
+
+    .burgermenu {
         display: block;
     }
 
-.main-nav {
+    .main-nav {
         display: none;
-}
+    }
 }
 
 /* Media query for desktop version */
 @media (min-width: 850px) {
 
-.burgermenu {
+    .burgermenu {
         display: none;
     }
 
-.main-nav {
+    .main-nav {
         display: block;
+    }
+
+    .overlay-content img {
+        display: none;
+    }
 }
+
+
+
+@media (max-width: 900px) {
+
+    .events {
+        display: block;
+        position: absolute;
+        padding-left: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+
+    }
+
+
+
+    img.logo {
+        display: none;
+    }
+
+    div.icons {
+        padding-left: 30px;
+    }
+
+    .findEvents {
+        margin-left: 180px;
+    }
+
+    .cinema {
+        transform: translateY(-180px);
+    }
+
+    .secondRow {
+        transform: translateY(-360px);
+    }
+
+
+
+    .desktop {
+        display: none;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-top: 1000px;
+        height: 573px;
+    }
+
+    .logos {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .contact, .about, .offer, .follow {
+        text-align: center;
+width: 100%;
+    }
 }
