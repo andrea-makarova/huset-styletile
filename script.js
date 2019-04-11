@@ -34,3 +34,18 @@ date.addEventListener("click", () => {
         }
     }
 });
+
+
+// Open and Close Burger menu //
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    filterButton.style.zIndex=0
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    setTimeout(()=>{
+        filterButton.style.zIndex=1
+    }, 500)
+
+}
