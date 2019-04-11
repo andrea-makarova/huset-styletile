@@ -34,12 +34,12 @@ genre.addEventListener("click", () => {
 date.addEventListener("click", () => {
     dateMenu.classList.toggle("hide");
     if (!locationMenu.classList.contains("hide")) {
-        locationMenu.classList.add("hide");
+        locationMenu.classList.add("hide");}
         if (!genreMenu.classList.contains("hide")) {
             genreMenu.classList.add("hide");
 
         }
-    }
+
     searchButton.style.display="block";
 });
 

@@ -571,7 +571,7 @@ footer h5 {
     }
 
     .findEvents {
-        margin-left: 180px;
+        display: none;
     }
 
     .cinema {
@@ -637,20 +637,22 @@ footer h5 {
 #genre-menu {
     position: absolute;
     top: 160px;
+    left: 35%;
     background-color: white;
-    width: 70px;
-    height: 100px;
-    padding: 30px;
+    width: 150px;
+    height: 130px;
+    padding: 10px;
     padding-bottom: 0px;
     padding-top: 5px;
+    padding-right: 0;
     z-index: 1;
     transform: translateX(0px);
 }
 
 #genre-menu p {
     cursor: pointer;
-    display: inline;
-    padding: 30px;
+   text-align: center;
+
 }
 
 #genre-menu p:hover {
@@ -661,14 +663,15 @@ footer h5 {
 #date-menu {
     position: absolute;
     top: 160px;
+    left: 63%;
     background-color: white;
-    width: 60%;
+    width: 80px;
     height: auto;
     padding: 30px;
     padding-bottom: 3px;
     padding-top: 5px;
     z-index: 1;
-    transform: translateX(-50px);
+    transform: translateX(0px);
 }
 
 #date-menu img {
