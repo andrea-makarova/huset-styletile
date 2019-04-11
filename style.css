@@ -82,6 +82,7 @@ div.icons {
     cursor: pointer;
 }
 
+
 .events {
     padding-left: 200px;
 }
@@ -96,25 +97,45 @@ div.icons {
 
 #location-menu {
     position: fixed;
-    top:160px;
+    top: 160px;
     background-color: white;
-    grid-area: 2/1/2/2;
-    width: 103px;
+    width: 60%;
+    height: 40px;
+    padding: 30px;
+    padding-bottom: 3px;
+    padding-top: 5px;
 }
 
 #location-menu p {
     cursor: pointer;
+    display: inline;
+    padding-right: 30px;
 }
 
-#location-menu p:hover{
+#location-menu p:hover {
     text-decoration: underline;
 }
 
-/*.menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-}*/
+#genre-menu {
+    position: fixed;
+    top: 160px;
+    background-color: white;
+    width: 60%;
+    height: 40px;
+    padding: 30px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+}
+
+#genre-menu p {
+    cursor: pointer;
+    display: inline;
+    padding: 30px;
+}
+
+#genre-menu p:hover {
+    text-decoration: underline;
+}
 
 .concert img {}
 
