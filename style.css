@@ -663,13 +663,14 @@ footer h5 {
 #date-menu {
     position: absolute;
     top: 160px;
-    left: 63%;
+    left: 68%;
     background-color: white;
     width: 80px;
     height: auto;
     padding: 30px;
     padding-bottom: 3px;
     padding-top: 5px;
+    padding-left: 0;
     z-index: 1;
     transform: translateX(0px);
 }
