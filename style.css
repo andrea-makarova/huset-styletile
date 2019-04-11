@@ -86,6 +86,10 @@ div.icons {
     width: 280px;
 }
 
+.hide {
+    display: none;
+}
+
 .concert img {
 
 }
