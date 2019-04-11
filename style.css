@@ -67,7 +67,7 @@ div.icons {
 }
 
 .icons img {
-    height: 40px;
+    height: 60px;
     padding-left: 30px;
     padding-right: 30px;
     cursor: pointer;
@@ -76,7 +76,7 @@ div.icons {
 .icons p {
     width: 100px;
     text-transform: uppercase;
-    font-size: 60%;
+    font-size: 70%;
     text-align: center;
     font-weight: 200;
     cursor: pointer;
@@ -97,7 +97,7 @@ div.icons {
 
 #location-menu {
     position: fixed;
-    top: 160px;
+    top: 200px;
     background-color: white;
     width: 60%;
     height: 40px;
@@ -118,7 +118,7 @@ div.icons {
 
 #genre-menu {
     position: fixed;
-    top: 160px;
+    top: 200px;
     background-color: white;
     width: 60%;
     height: 40px;
@@ -135,6 +135,26 @@ div.icons {
 
 #genre-menu p:hover {
     text-decoration: underline;
+}
+
+
+#date-menu {
+    position: fixed;
+    top: 200px;
+    background-color: white;
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+}
+
+#date-menu img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .concert img {}
