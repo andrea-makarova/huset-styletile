@@ -1,0 +1,101 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: #DCF1EC
+}
+
+/* header */
+nav{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 60%;
+    position: fixed;
+    background-color: white;
+ top: 0px;
+    left: 0px;
+    padding: 10px;
+}
+
+a {
+     text-decoration: none;
+    color: black;
+    padding-right: 70px;
+    font-weight: 300;
+
+}
+
+a.first {
+    padding-right: 0px;
+}
+
+a.languages {
+    padding-right: 0%;
+}
+
+.searchIcon {
+    max-width: 12px;
+    padding-top: 2px;
+    position: absolute;
+    transform: translateX(-15px);
+    max-height: auto;
+}
+
+input {
+    border: none;
+    width: 140px;
+    font-size: 80%;
+
+}
+
+/*main*/
+
+img.logo {
+    width: 180px;
+    position: fixed;
+    top: 100px;
+}
+
+div.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-top: 70px;
+    padding-left: 270px;
+}
+
+.icons img{
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.icons p{
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 60%;
+    text-align: center;
+    font-weight: 200;
+}
+.events {
+    padding-left: 200px;
+}
+.events img {
+    width: 280px;
+}
+
+.concert img {
+
+}
+
+.purple {
+    width: 280px;
+    height: 150px;
+    background-color: #A54B9F;
+    display: block;
+    position: fixed;
+
+}
+
