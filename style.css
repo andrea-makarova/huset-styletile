@@ -429,6 +429,7 @@ footer h5 {
 }
 
 #location-menu {
+    width: 900px;
     position: absolute;
     top: 160px;
     background-color: white;
